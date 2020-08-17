@@ -1,0 +1,62 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js start
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  10.19.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: write EIO
+      at afterWriteDispatched (internal/stream_base_commons.js:78:25)
+      at writeGeneric (internal/stream_base_commons.js:73:3)
+      at WriteStream.Socket._writeGeneric (net.js:714:5)
+      at WriteStream.Socket._write (net.js:726:8)
+      at doWrite (_stream_writable.js:415:12)
+      at writeOrBuffer (_stream_writable.js:399:5)
+      at WriteStream.Writable.write (_stream_writable.js:299:11)
+      at Object.clearLine (readline.js:1176:12)
+      at clearLine (/usr/share/yarn/lib/cli.js:49657:12)
+      at ConsoleReporter._log (/usr/share/yarn/lib/cli.js:96768:43)
+
+npm manifest: 
+  {
+    "name": "todos",
+    "version": "0.0.1",
+    "private": true,
+    "devDependencies": {
+      "react-scripts": "^3.4.3"
+    },
+    "dependencies": {
+      "prop-types": "^15.7.2",
+      "react": "^16.13.1",
+      "react-dom": "^16.13.1",
+      "react-redux": "^7.2.0",
+      "redux": "^4.0.5"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "eject": "react-scripts eject",
+      "test": "react-scripts test --env=node"
+    },
+    "browserslist": [
+      ">0.2%",
+      "not dead",
+      "not ie <= 11",
+      "not op_mini all"
+    ]
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
